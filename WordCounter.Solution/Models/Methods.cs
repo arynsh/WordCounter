@@ -13,9 +13,9 @@ namespace Counts
             UserWord = userWord;
             UserSentence = userSentence;
         }
+
         public int Counter()
         {
-
             string[] words = UserSentence.Split(" ");
             int count = 0;
 
@@ -29,10 +29,23 @@ namespace Counts
             return count;
         }
 
-        public string[] ToArray()
-        {
-            string[] arrSentence = UserSentence.Split(" ");
-            return arrSentence;
-        }
+        // public string[] ToArray()
+        // {
+        //     string[] arrSentence = UserSentence.Split(" ");
+        //     return arrSentence;
+        // }
+
+        // public bool DoesContain()
+        // {
+        //     string[] arrSentence = ToArray();s
+        //     if (arrSentence.Contains(UserWord))
+        //     {
+        //         return true;
+        //     } 
+        //     else 
+        //     { 
+        //         return false;
+        //     }
+        // }
     }
 }
