@@ -13,19 +13,21 @@ namespace Counts
             Console.WriteLine("Please enter a sentence:");
             string userSentence = Console.ReadLine().ToLower();
 
-            string[] words = userSentence.Split(" ");
-            int count = 0;
+            RepeatCounter userInput = new RepeatCounter(userWord, userSentence);
 
-            for (int i = 0; i < words.Length; i++)
-            {
-                if (words[i].Equals(userWord))
-                {
-                    count+= 1;
-                }
-            }
-            Console.WriteLine(count);
+            // string[] words = userSentence.Split(" ");
+            // int count = 0;
 
-            // Console.WriteLine(RepeatCounter.Counter());
+            // for (int i = 0; i < words.Length; i++)
+            // {
+            //     if (words[i].Equals(userWord))
+            //     {
+            //         count+= 1;
+            //     }
+            // }
+            // Console.WriteLine(count);
+
+            Console.WriteLine(userInput.Counter());
         }
     }
 }
