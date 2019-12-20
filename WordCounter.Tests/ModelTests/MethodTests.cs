@@ -16,5 +16,15 @@ namespace Counts.Tests
             string result = userInputWord.ToLower();
             Assert.AreEqual("raining", result);
         }
+
+        [TestMethod]
+        public void ToArray_ReturnsJoinedArr_string()
+        {
+            string userInputSentence = "raining today";
+            string userInputWord = "raining";
+            RepeatCounter userInput = new RepeatCounter(userInputWord, userInputSentence);
+            string result = string.Join(", ",(userInput.ToArray()));
+            Assert.AreEqual("raining, today", result);
+        }
     }
 }

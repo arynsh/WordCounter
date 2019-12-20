@@ -28,5 +28,11 @@ namespace Counts
             }
             return count;
         }
+
+        public string[] ToArray()
+        {
+            string[] arrSentence = UserSentence.Split(" ");
+            return arrSentence;
+        }
     }
 }
