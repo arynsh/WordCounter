@@ -12,9 +12,17 @@ namespace Counts.Tests
         [TestMethod]
         public void Main_ReturnsLower_string()
         {
-            string userInputWord = "Raining";
+            string userInputWord = "I";
             string result = userInputWord.ToLower();
-            Assert.AreEqual("raining", result);
+            Assert.AreEqual("i", result);
+        }
+
+        [TestMethod]
+        public void Main_ReturnsLowerSent_string()
+        {
+            string userInputSentence = "I do";
+            string result = userInputSentence.ToLower();
+            Assert.AreEqual("i do", result);
         }
 
         [TestMethod]
@@ -40,8 +48,8 @@ namespace Counts.Tests
         [TestMethod]
         public void Counter_ReturnsNothingIfWordIsPart_int()
         {
-            string userInputWord = "tree";
-            string userInputSentence = "look at the snow on the trees";
+            string userInputWord = "I";
+            string userInputSentence = "I'm hungry";
             RepeatCounter userInput = new RepeatCounter(userInputWord, userInputSentence);
             int result = userInput.Counter();
             Assert.AreEqual(0, result);
