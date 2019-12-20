@@ -10,12 +10,11 @@ namespace Counts.Tests
     {
 
         [TestMethod]
-        public void Counter_ReturnsArray_string()
+        public void Main_ReturnsLower_string()
         {
-            string userInputWord = "ehi";
-            string userSentence = "How are you doing";
-            string[] result = RepeatCounter.Counter(userInputWord, userSentence);
-            Assert.AreEqual({"how", "are", "you", "doing"};, result);
+            string userInputWord = "Raining";
+            string result = userInputWord.ToLower();
+            Assert.AreEqual("raining", result);
         }
     }
 }

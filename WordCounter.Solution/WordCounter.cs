@@ -15,6 +15,8 @@ namespace Counts
 
             RepeatCounter userInput = new RepeatCounter(userWord, userSentence);
 
+             Console.WriteLine(userInput.Counter());
+
             // string[] words = userSentence.Split(" ");
             // int count = 0;
 
@@ -26,8 +28,6 @@ namespace Counts
             //     }
             // }
             // Console.WriteLine(count);
-
-            Console.WriteLine(userInput.Counter());
         }
     }
 }
