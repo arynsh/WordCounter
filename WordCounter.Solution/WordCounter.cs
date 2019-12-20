@@ -3,14 +3,29 @@ using System.Collections.Generic;
 
 namespace Counts
 {
-    public class userInterface
+    public class Program
     {
         public static void Main()
         {
             Console.WriteLine("Please enter a word:");
             string userWord = Console.ReadLine().ToLower();
+
             Console.WriteLine("Please enter a sentence:");
             string userSentence = Console.ReadLine().ToLower();
+
+            string[] words = userSentence.Split(" ");
+            int count = 0;
+
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (words[i].Equals(userWord))
+                {
+                    count+= 1;
+                }
+            }
+            Console.WriteLine(count);
+
+            // Console.WriteLine(RepeatCounter.Counter());
         }
     }
 }

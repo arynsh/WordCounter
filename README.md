@@ -38,7 +38,12 @@ Copyright (c) 2019 Sharon Lee
   Lowercase word: hi
   Lowercase sentence: hi there
 
-2. The program will take in the user inputted word and sentence and check if the word appears in the sentence.
+2 . The program will take in the user inputted sentence and split it into an array of strings.
+
+  Inputted word: How are you doing today
+  Inputted Sentence: ["how", "are", "you", "doing", "today"]
+
+3. The program will take in the user inputted word and sentence and check if the word appears in the sentence.
 
   Inputted word: Hi 
   Inputted Sentence: Hi there
@@ -48,7 +53,7 @@ Copyright (c) 2019 Sharon Lee
   Inputted Sentence: How are you doing
   Output: False
 
-3. The program will take in the user inputted word and sentence and count how many times the word appears in the sentence.
+4. The program will take in the user inputted word and sentence and count how many times the word appears in the sentence.
 
   Inputted word: Hi 
   Inputted Sentence: Hi there
