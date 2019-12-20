@@ -20,10 +20,20 @@ namespace Counts.Tests
         [TestMethod]
         public void Main_ReturnsLowerSent_string()
         {
-            string userInputSentence = "I do";
+            string userInputSentence = "I SURE DO LOVE PANCAKES";
             string result = userInputSentence.ToLower();
-            Assert.AreEqual("i do", result);
+            Assert.AreEqual("i sure do love pancakes", result);
         }
+
+         [TestMethod]
+        public void Counter_ReturnsNothingIfWordIsPart_int()
+        {
+            string userInputWord = "I";
+            string userInputSentence = "I'm hungry";
+            RepeatCounter userInput = new RepeatCounter(userInputWord, userInputSentence);
+            int result = userInput.Counter();
+            Assert.AreEqual(0, result);
+        }       
 
         [TestMethod]
         public void ToArray_ReturnsJoinedArr_string()
@@ -38,18 +48,28 @@ namespace Counts.Tests
         [TestMethod]
         public void Counter_ReturnsNumOfTimesWordAppears_int()
         {
-            string userInputWord = "raining";
-            string userInputSentence = "raining today";
+            string userInputWord = "green";
+            string userInputSentence = "Look at the green birds hiding in greenery on that very green tree";
             RepeatCounter userInput = new RepeatCounter(userInputWord, userInputSentence);
             int result = userInput.Counter();
-            Assert.AreEqual(1, result);
+            Assert.AreEqual(2, result);
         }
 
         [TestMethod]
-        public void Counter_ReturnsNothingIfWordIsPart_int()
+        public void Counter_ReturnsZero_int()
         {
-            string userInputWord = "I";
-            string userInputSentence = "I'm hungry";
+            string userInputWord = "Mango";
+            string userInputSentence = "What kinds of fruits do you like to eat";
+            RepeatCounter userInput = new RepeatCounter(userInputWord, userInputSentence);
+            int result = userInput.Counter();
+            Assert.AreEqual(0, result);
+        }
+
+        [TestMethod]
+        public void Counter_ReturnsNumOfTimesWord_int()
+        {
+            string userInputWord = "dog";
+            string userInputSentence = "the doghouse is in the backyard";
             RepeatCounter userInput = new RepeatCounter(userInputWord, userInputSentence);
             int result = userInput.Counter();
             Assert.AreEqual(0, result);
