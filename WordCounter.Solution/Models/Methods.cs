@@ -29,23 +29,10 @@ namespace Counts
             return count;
         }
 
-        // public string[] ToArray()
-        // {
-        //     string[] arrSentence = UserSentence.Split(" ");
-        //     return arrSentence;
-        // }
-
-        // public bool DoesContain()
-        // {
-        //     string[] arrSentence = ToArray();s
-        //     if (arrSentence.Contains(UserWord))
-        //     {
-        //         return true;
-        //     } 
-        //     else 
-        //     { 
-        //         return false;
-        //     }
-        // }
+        public string[] ToArray()
+        {
+            string[] arrSentence = UserSentence.Split(" ");
+            return arrSentence;
+        }
     }
 }

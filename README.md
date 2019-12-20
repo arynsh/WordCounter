@@ -66,3 +66,8 @@ Copyright (c) 2019 Sharon Lee
   Inputted word: Hi 
   Inputted Sentence: How are you doing
   Output: 0
+
+5. Program will not count if the word appears as part of another word.
+   Inputted word: hi
+   Inputted sentence: we love go hiking
+   Output: 0

@@ -26,5 +26,27 @@ namespace Counts.Tests
             string result = string.Join(", ",(userInput.ToArray()));
             Assert.AreEqual("raining, today", result);
         }
+
+        [TestMethod]
+        public void Counter_ReturnsNumOfTimesWordAppears_int()
+        {
+            string userInputWord = "raining";
+            string userInputSentence = "raining today";
+            RepeatCounter userInput = new RepeatCounter(userInputWord, userInputSentence);
+            int result = userInput.Counter();
+            Assert.AreEqual(1, result);
+        }
+
+        [TestMethod]
+        public void Counter_ReturnsNothingIfWordIsPart_int()
+        {
+            string userInputWord = "tree";
+            string userInputSentence = "look at the snow on the trees";
+            RepeatCounter userInput = new RepeatCounter(userInputWord, userInputSentence);
+            int result = userInput.Counter();
+            Assert.AreEqual(0, result);
+        }
+        
+
     }
 }
