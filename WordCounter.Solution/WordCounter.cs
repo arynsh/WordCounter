@@ -8,9 +8,9 @@ namespace Counts
         public static void Main()
         {
             Console.WriteLine("Please enter a word:");
-            string userWord = Console.ReadLine();
+            string userWord = Console.ReadLine().ToLower();
             Console.WriteLine("Please enter a sentence:");
-            string userSentence = Console.ReadLine();
+            string userSentence = Console.ReadLine().ToLower();
         }
     }
 }
