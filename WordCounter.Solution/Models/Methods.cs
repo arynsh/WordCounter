@@ -13,7 +13,7 @@ namespace Counts
             UserWord = userWord;
             UserSentence = userSentence;
         }
-
+        
         public int Counter()
         {
             string[] words = UserSentence.Split(" ");
@@ -34,5 +34,13 @@ namespace Counts
             string[] arrSentence = UserSentence.Split(" ");
             return arrSentence;
         }
+
+
+        // public bool CheckParse(string userWord) 
+        // { 
+        //     bool result; 
+        //     result = Boolean.TryParse(userWord, out result); 
+        //     return result;
+        // }
     }
 }

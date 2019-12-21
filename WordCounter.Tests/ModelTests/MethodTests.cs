@@ -74,7 +74,16 @@ namespace Counts.Tests
             int result = userInput.Counter();
             Assert.AreEqual(0, result);
         }
-        
+
+        // [TestMethod]
+        // public void CheckParse_ReturnsBool_bool()
+        // {
+        //     string userInputWord = "1";
+        //     string userInputSentence = "1234567";
+        //     RepeatCounter userInput = new RepeatCounter(userInputWord, userInputSentence);
+        //     bool result = userInput.CheckParse(userInputWord);
+        //     Assert.AreEqual(false, result);
+        // }
 
     }
 }

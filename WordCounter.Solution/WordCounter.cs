@@ -15,19 +15,16 @@ namespace Counts
 
             RepeatCounter userInput = new RepeatCounter(userWord, userSentence);
 
-             Console.WriteLine(userInput.Counter());
+            Console.WriteLine(userInput.Counter());
 
-            // string[] words = userSentence.Split(" ");
-            // int count = 0;
-
-            // for (int i = 0; i < words.Length; i++)
+            // if (userInput.CheckParse(userWord).Equals(false))
             // {
-            //     if (words[i].Equals(userWord))
-            //     {
-            //         count+= 1;
-            //     }
+            //     Console.WriteLine(userInput.Counter());
             // }
-            // Console.WriteLine(count);
+            // else
+            // { 
+            //     Console.WriteLine("Invalid input");
+            // }
         }
     }
 }
