@@ -46,7 +46,7 @@ Copyright (c) 2019 Sharon Lee
   Inputted Sentence: I'm hungry
   Output: 0
 
-These inputs were chosen because "I" does appear in "I'm" hungry, but the program should know to handle "I" and "I'm" differently.
+  These inputs were chosen because "I" does appear in "I'm" hungry, but the program should know to handle "I" and "I'm" differently.
 
 3. The program will take in the user inputted word and sentence and count how many times the word appears in the sentence.
 
@@ -54,11 +54,7 @@ These inputs were chosen because "I" does appear in "I'm" hungry, but the progra
   Inputted Sentence: Look at the green birds hiding in greenery on that very green tree
   Output: 2
 
-  Inputted word: Mango
-  Inputted Sentence: what kinds of fruits do you like to eat
-  Output: 0
-
-  The first set of inputs were chosen because "Greenery" contains the word "green", but the program should not count greenery in the total result. The second set was chosen because mango does not appear in the sentence.
+  This set of inputs were chosen because "Greenery" contains the word "green", but the program should not count greenery in the total result. 
 
 4. Program will not count if the word appears as part of another word.
    Inputted word: dog

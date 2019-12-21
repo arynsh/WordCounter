@@ -20,9 +20,9 @@ namespace Counts.Tests
         [TestMethod]
         public void Main_ReturnsLowerSent_string()
         {
-            string userInputSentence = "I SURE DO LOVE PANCAKES";
+            string userInputSentence = "I am";
             string result = userInputSentence.ToLower();
-            Assert.AreEqual("i sure do love pancakes", result);
+            Assert.AreEqual("i am", result);
         }
 
          [TestMethod]
@@ -36,16 +36,6 @@ namespace Counts.Tests
         }       
 
         [TestMethod]
-        public void ToArray_ReturnsJoinedArr_string()
-        {
-            string userInputSentence = "raining today";
-            string userInputWord = "raining";
-            RepeatCounter userInput = new RepeatCounter(userInputWord, userInputSentence);
-            string result = string.Join(", ",(userInput.ToArray()));
-            Assert.AreEqual("raining, today", result);
-        }
-
-        [TestMethod]
         public void Counter_ReturnsNumOfTimesWordAppears_int()
         {
             string userInputWord = "green";
@@ -53,16 +43,6 @@ namespace Counts.Tests
             RepeatCounter userInput = new RepeatCounter(userInputWord, userInputSentence);
             int result = userInput.Counter();
             Assert.AreEqual(2, result);
-        }
-
-        [TestMethod]
-        public void Counter_ReturnsZero_int()
-        {
-            string userInputWord = "Mango";
-            string userInputSentence = "What kinds of fruits do you like to eat";
-            RepeatCounter userInput = new RepeatCounter(userInputWord, userInputSentence);
-            int result = userInput.Counter();
-            Assert.AreEqual(0, result);
         }
 
         [TestMethod]
@@ -83,6 +63,16 @@ namespace Counts.Tests
         //     RepeatCounter userInput = new RepeatCounter(userInputWord, userInputSentence);
         //     bool result = userInput.CheckParse(userInputWord);
         //     Assert.AreEqual(false, result);
+        // }
+
+        //  [TestMethod]
+        // public void ToArray_ReturnsJoinedArr_string()
+        // {
+        //     string userInputSentence = "raining today";
+        //     string userInputWord = "raining";
+        //     RepeatCounter userInput = new RepeatCounter(userInputWord, userInputSentence);
+        //     string result = string.Join(", ",(userInput.ToArray()));
+        //     Assert.AreEqual("raining, today", result);
         // }
 
     }

@@ -29,11 +29,11 @@ namespace Counts
             return count;
         }
 
-        public string[] ToArray()
-        {
-            string[] arrSentence = UserSentence.Split(" ");
-            return arrSentence;
-        }
+        // public string[] ToArray()
+        // {
+        //     string[] arrSentence = UserSentence.Split(" ");
+        //     return arrSentence;
+        // }
 
 
         // public bool CheckParse(string userWord) 
