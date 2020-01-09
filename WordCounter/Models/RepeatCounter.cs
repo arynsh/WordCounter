@@ -36,11 +36,10 @@ namespace Counts
         // }
 
 
-        // public bool CheckParse(string userWord) 
-        // { 
-        //     bool result; 
-        //     result = Boolean.TryParse(userWord, out result); 
-        //     return result;
-        // }
+        public bool CheckParse(string userWord) 
+        { 
+            int parseInput;
+            return int.TryParse(userWord, out parseInput); 
+        }
     }
 }

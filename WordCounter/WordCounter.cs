@@ -17,14 +17,14 @@ namespace Counts
 
             Console.WriteLine(userInput.Counter());
 
-            // if (userInput.CheckParse(userWord).Equals(false))
-            // {
-            //     Console.WriteLine(userInput.Counter());
-            // }
-            // else
-            // { 
-            //     Console.WriteLine("Invalid input");
-            // }
+            if (userInput.CheckParse(userWord).Equals(false))
+            {
+                Console.WriteLine(userInput.Counter());
+            }
+            else
+            { 
+                Console.WriteLine("Invalid input");
+            }
         }
     }
 }

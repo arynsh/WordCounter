@@ -1,12 +1,12 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Counts;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 
-namespace Counts.Tests 
+namespace Counts.Tests
 {
     [TestClass]
-    public class CountsTest
+    public class RepeatCounterTests
     {
 
         [TestMethod]
@@ -33,7 +33,7 @@ namespace Counts.Tests
             RepeatCounter userInput = new RepeatCounter(userInputWord, userInputSentence);
             int result = userInput.Counter();
             Assert.AreEqual(0, result);
-        }       
+        }
 
         [TestMethod]
         public void Counter_ReturnsNumOfTimesWordAppears_int()
